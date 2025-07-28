@@ -23,20 +23,10 @@ components.html("<script>window.scrollTo(0, 0);</script>", height=0)
 # ✅ Logo + titlu
 st.markdown("""
 <style>
-    .logo-container {
-        margin-top: -10px;
-        margin-bottom: 0.7rem;
-        text-align: center;
-    }
-    .logo-container img {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-    }
     .main-title {
         text-align: center;
         font-size: 1.7rem;
-        margin-top: 0;
+        margin-top: 0.7rem;
         margin-bottom: 1.5rem;
         color: black;
     }
@@ -46,11 +36,13 @@ st.markdown("""
         }
     }
 </style>
-<div class='logo-container'>
-    st.image("Kuziini_logo_negru.png", use_column_width=True, width=320)
-</div>
-<div class='main-title'>📐 Configurator diagonala TV în funcție de distanță</div>
 """, unsafe_allow_html=True)
+
+# Logo separat, fără HTML
+st.image("Kuziini_logo_negru.png", use_column_width=False, width=320)
+
+# Titlu
+st.markdown("<div class='main-title'>📐 Configurator diagonala TV în funcție de distanță</div>", unsafe_allow_html=True)
 
 # Excel
 excel_file_path = "www.xlsx"
@@ -101,10 +93,10 @@ with col1:
         }}
     </style>
     <div class='recomandare-box'>
-        <h1>{  diagonala_inch}"</h1>
+        <h1>{diagonala_inch}"</h1>
         <h3>Kuziini recomandă</h3>
         <p>pentru distanța de {distanta} metri</p>
-        <p style='font-weight:bold;'>lățime{latime_m}m × înălțime{inaltime_m}m </p>
+        <p style='font-weight:bold;'>lățime {latime_m} m × înălțime {inaltime_m} m</p>
     </div>
     """, unsafe_allow_html=True)
 
