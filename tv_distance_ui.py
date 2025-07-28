@@ -60,7 +60,7 @@ ws = wb.active
 col1, col2 = st.columns([1, 1])
 
 with col1:
-    distanta = st.slider("📏 Alege distanța de vizionare (m)", min_value=1.0, max_value=10.0, value=2.5, step=0.1)
+    distanta = st.slider("📏 Alege distanța de vizionare (m)", min_value=1.0, max_value=5.0, value=2.5, step=0.1)
     diagonala_inch = calculeaza_diagonala(distanta)
     latime_m, inaltime_m = dimensiuni_televizor(diagonala_inch)
 
