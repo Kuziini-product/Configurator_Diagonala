@@ -49,7 +49,7 @@ st.markdown("""
 <div class='logo-container'>
     <st.image("Kuziini_logo_negru.png", use_column_width=True, width=320)>
 </div>
-<div class='main-title'>📐 Configurarea diagonalei TV în funcție de distanță</div>
+<div class='main-title'>📐 Configurator diagonala TV în funcție de distanță</div>
 """, unsafe_allow_html=True)
 
 # Excel
@@ -101,10 +101,10 @@ with col1:
         }}
     </style>
     <div class='recomandare-box'>
-        <h1>{diagonala_inch}"</h1>
+        <h1>{  diagonala_inch}"</h1>
         <h3>Kuziini recomandă</h3>
         <p>pentru distanța de {distanta} metri</p>
-        <p style='font-weight:bold;'>🖼️ {latime_m} m lățime × {inaltime_m} m înălțime</p>
+        <p style='font-weight:bold;'>lățime{latime_m}m × înălțime{inaltime_m}m </p>
     </div>
     """, unsafe_allow_html=True)
 
