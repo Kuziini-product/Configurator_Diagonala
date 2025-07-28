@@ -39,7 +39,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Logo separat, fără HTML
-st.image("Kuziini_logo_negru.png", use_column_width=False, width=320)
+st.image("Kuziini_logo_negru.png", use_container_width=False, width=320)
 
 # Titlu
 st.markdown("<div class='main-title'>📐 Configurator diagonala TV în funcție de distanță</div>", unsafe_allow_html=True)
