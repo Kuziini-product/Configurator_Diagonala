@@ -47,7 +47,7 @@ st.markdown("""
     }
 </style>
 <div class='logo-container'>
-    <img src='Kuziini_Logo.png'/>
+    <img src='Kuziini_logo_negru.png'/>
 </div>
 <div class='main-title'>📐 Configurarea diagonalei TV în funcție de distanță</div>
 """, unsafe_allow_html=True)
